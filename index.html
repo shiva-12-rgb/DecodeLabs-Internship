@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiva Sai — Full Stack Developer</title>
+  <meta name="description" content="Portfolio and project interface built for the DecodeLabs Full Stack Internship, Project 1.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo">Shiva<span>.</span>Sai</a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primaryNav" class="primary-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Full Stack Development Intern · DecodeLabs</p>
+        <h1>Building interfaces that hold up on every screen, not just the one on my desk.</h1>
+        <p class="hero-sub">
+          Second-year CSE student working across backend APIs, AI/ML integrations and
+          frontend interfaces. This page is Project 1 of the DecodeLabs training track —
+          a hand-built responsive layout with no frameworks.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">See the work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-hidden="true">
+        <div class="panel-row"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        <pre class="panel-code">&lt;main&gt;
+  &lt;header&gt;
+  &lt;nav&gt;
+  &lt;article&gt;
+  &lt;footer&gt;
+&lt;/main&gt;</pre>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="section-head">
+        <h2>About</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-lead">
+          I'm Shiva Sai, a second-year Computer Science Engineering student based in
+          Hyderabad. My work spans backend development, AI/ML integrations, automation
+          workflows and frontend deployment — usually all in the same week.
+        </p>
+        <p>
+          This interface is the first deliverable in a four-week Full Stack Development
+          track. Project 1 focuses on the frontend layer: semantic HTML5, a mobile-first
+          CSS layout using Grid and Flexbox, and just enough JavaScript to make the
+          interface behave — no build tools, no frameworks.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="section-head">
+        <h2>Toolkit</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>HTML5</h3>
+          <p>Semantic landmarks and structure — the right element for the right job, not just divs.</p>
+        </article>
+        <article class="skill-card">
+          <h3>CSS3</h3>
+          <p>Responsive styling with Grid for page structure and Flexbox for components.</p>
+        </article>
+        <article class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Lightweight state and interactivity — menu toggles, filters, form handling.</p>
+        </article>
+        <article class="skill-card">
+          <h3>Backend &amp; AI/ML</h3>
+          <p>Node.js/Express APIs and Gemini-powered tools from parallel coursework.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Filter by track.</p>
+      </div>
+
+      <div class="filter-bar" role="group" aria-label="Filter projects">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card" data-category="frontend">
+          <span class="project-tag">Frontend</span>
+          <h3>Responsive Interface — Project 1</h3>
+          <p>This page: a mobile-first layout built with semantic HTML and CSS Grid/Flexbox.</p>
+        </article>
+        <article class="project-card" data-category="ai">
+          <span class="project-tag">AI / ML</span>
+          <h3>Gradio Study Assistant</h3>
+          <p>A Google Gemini–powered study assistant built with Gradio for an AI/ML module.</p>
+        </article>
+        <article class="project-card" data-category="backend">
+          <span class="project-tag">Backend</span>
+          <h3>CCBP Node.js/Express Track</h3>
+          <p>Backend assignments covering REST APIs and server-side patterns with Express.</p>
+        </article>
+        <article class="project-card" data-category="ai">
+          <span class="project-tag">Automation</span>
+          <h3>RSS-to-AI Dashboard</h3>
+          <p>An n8n workflow that pulls RSS feeds and summarizes them into a personal dashboard.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Have a project or feedback? Send a note.</p>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <span class="field-error" data-error-for="name"></span>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <span class="field-error" data-error-for="email"></span>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <span class="field-error" data-error-for="message"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Shiva Sai. Built for the DecodeLabs Full Stack Internship, Project 1.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
