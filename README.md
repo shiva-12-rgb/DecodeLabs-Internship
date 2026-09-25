@@ -1,4 +1,4 @@
-# DecodeLabs Internship â€” Project 1: Responsive Frontend Interface
+# DecodeLabs Internship Project 1: Responsive Frontend Interface
 
 Full Stack Development Internship (DecodeLabs), Batch 2026 â€” Week 1 / Project 1.
 
