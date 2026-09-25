@@ -17,15 +17,3 @@ css/style.css
 js/script.js
 ```
 
-## Running it locally
-No build step needed â€” open `index.html` directly in a browser, or serve it:
-```bash
-python3 -m http.server 8000
-```
-Then visit `http://localhost:8000`.
-
-## Status
-- [x] Project 1 â€” Responsive Frontend Interface
-- [ ] Project 2
-- [ ] Project 3
-- [ ] Project 4
